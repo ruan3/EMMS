@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EsquelPass</string>
+    <string name="flip_down">Kéo xuống để làm mới</string>
+    <string name="release_finger">Bấm vào đây để cập nhật</string>
+	<string name="sort_by">Sort By</string>
+    <!-- title activity -->
+    <string name="title_activity_leave_list">Các yêu cầu của tôi</string>
+    <string name="title_activity_leave_type">Hãy lựa chọn một kiểu nghỉ</string>
+    <string name="title_activity_leave_rejected">Lý do từ chối</string>
+    <string name="title_region">Vùng / Kinh doanh</string>
+    <string name="title_profile_detail">Cài đặt cá nhân</string>
+    <string name="epay_slip_working_hour">Giờ làm việc chi tiết (Hour)</string>
+    <string name="epay_slip_income">Chi tiết lương (Yuan)</string>
+    <string name="epay_slip_deduction">Chi tiết Giữ (Yuan)</string>
+    <string name="year">năm</string>
+    <string name="month">tháng</string>
+    <string name="day">ngày</string>
+    <string name="save">Lưu</string>
+    <string name="print_time">thời gian in ấn</string>
+    <string name="save_epay_slip">Thành công để tiết kiệm trong</string>
+    <string name="dollar">nhân dân tệ</string>
+    <string name="warning_title">Lời khuyên</string>
+    <string name="warning_message_no_user">Vui lòng điền vào Employee ID</string>
+    <string name="warning_message_no_password">Xin hãy điền mật khẩu</string>
+    <string name="warning_message_confirm">xác nhận</string>
+    <string name="message_no_payslip">Không có thông tin tiền lương</string>
+    <string name="no_any_channel">Không có kết quả tìm kiếm</string>
+    <string name="content">Nội dung</string>
+    <string name="network_error">Vui lòng kiểm tra kết nối Internet của bạn</string>
+    <string name="login_error">ID của nhân viên hoặc mật khẩu không đúng</string>
+    <string name="password_hint">mật khẩu</string>
+    <string name="downloading">tải...</string>
+    <string name="download_complete">tải về thành công</string>
+    <string name="login_id_hint">Số nhà máy Label</string>
+    <string name="login_password_hint">Mật khẩu mặc định</string>
+    <string name="login_description">*Nếu mật khẩu của bạn đã không được thay đổi trước khi, các mật khẩu mặc định sẽ là 6 chữ số cuối cùng của ngày sinh nhật của bạn in trên thẻ nhận dạng. (ví dụ như ngày sinh nhật của bạn là 19880101, mật khẩu mặc định sẽ là 880101</string>
+    <string name="error_channel">Không có bài viết mới</string>
+    <string name="retry">thử lại</string>
+    <string name="ok">xác nhận</string>
+    <string name="select">Số bài viết hiển thị trên mỗi trang</string>
+    <string name="tab1">tất cả\n</string>
+    <string name="tab2">chưa giải quyết\n</string>
+    <string name="tab3">Đã hoàn thành\n</string>
+    <string name="tab4">Bị từ chối\n</string>
+    <string name="user_id">Mã hiệu công nhân</string>
+    <string name="name">tên</string>
+    <string name="requester_salary_date">*đến ngày trả nợ</string>
+    <string name="location">*Nhà máy</string>
+    <string name="location_department">*Sở</string>
+    <string name="task_type">*Loại chứng nhận</string>
+    <string name="usage">*Chứng nhận Cách sử dụng</string>
+    <string name="receive_method">*Phương pháp Reveiving</string>
+    <string name="receive_address">*Địa chỉ nhận hàng</string>
+    <string name="phone">*Số liên lạc</string>
+    <string name="request_remark">nhận xét</string>
+    <string name="reject_reason">Lý do từ chối</string>
+    <string name="fail_to_get_task">Giấy chứng nhận không tìm thấy</string>
+    <string name="error_fill_phone">Vui lòng điền vào số liên lạc</string>
+    <string name="error_fill_address">Xin vui lòng điền địa chỉ vận chuyển</string>
+    <string name="success_submit_request">Các yêu cầu hàng thành công</string>
+    <string name="failed_submit_request">Không áp dụng cho vấn đề</string>
+    <string name="scroll_view">cuộn trang</string>
+    <string name="menu_refresh">Đang cập nhật…</string>
+    <string name="refresh_pull_down">Đang cập nhật…</string>
+    <string name="refresh_release">Đang cập nhật…</string>
+    <string name="loading">Đang cập nhật…</string>
+    <string name="refresh_pull_up">Đang cập nhật…</string>
+    <string name="error_get_location">Thông tin không được tìm thấy</string>
+    <string name="error_without_receive_address">Không có địa chỉ vận chuyển</string>
+    <string name="error_get_task">Giấy chứng nhận không tìm thấy</string>
+    <string name="error_token_expired">Đăng nhập của bạn đã hết hạn. Xin vui lòng đăng nhập lại.</string>
+    <string name="error_getting_request">New vấn đề cần làm không được tìm thấy</string>
+    <string name="task_form_description">Lưu ý: Các mục đánh dấu "*" được yêu cầu</string>
+    <string name="remember_password">Nhớ mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="reg_task">Yêu cầu cấp giấy chứng nhận</string>
+    <string name="my_task">Các yêu cầu của tôi</string>
+    <string name="task_preview">Chứng nhận mẫu</string>
+    <string name="china">Trung Quốc</string>
+    <string name="page_showing_description">Số bài viết hiển thị trên mỗi trang</string>
+    <string name="setting">Cài đặt</string>
+    <string name="recommend">Khuyến nghị</string>
+    <string name="epay_slip">Lương Tự Kiểm tra</string>
+    <string name="more">hơn</string>
+    <string name="epay_slip_print">Chi tiết lương</string>
+    <string name="epay_slip_print_salary">tiền lương</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="working_time">Giờ làm việc</string>
+    <string name="salary">tiền lương</string>
+    <string name="allowance">phúc lợi</string>
+    <string name="deduction">khấu trừ</string>
+    <string name="slip_print">Chi tiết lương</string>
+    <string name="article">Bài báo</string>
+    <string name="new_task">Thêm vào-làm vấn đề</string>
+    <string name="submit">đệ trình</string>
+
+    <!-- Leave status -->
+    <string name="approved">đã được phê duyệt</string>
+    <string name="to_be_approved">chưa giải quyết</string>
+    <string name="rejected">Bị từ chối</string>
+
+    <!-- Leave unit -->
+    <string name="hour">Hour</string>
+    <string name="day">ngày</string>
+
+    <!-- Leave generation detail array -->
+    <string-array name="leave_details_key">
+        <item>Mã hiệu công nhân</item>
+        <item>Ngày yêu cầu</item>
+        <item>Để lại loại</item>
+        <item>Để lại Credits</item>
+        <item>ngày bắt đầu</item>
+        <item>Ngày cuối</item>
+        <item>Để lại Length</item>
+    </string-array>
+
+    <string name="channel_epay_slip">Lương Tự Kiểm tra</string>
+    <string name="channel_to_do_list">Chứng nhận tự Áp dụng</string>
+    <string name="channel_apply_leave">Các yêu cầu Leave My</string>
+    <string name="channel_app_store">AppStore</string>
+
+    <!-- Leave type fail message -->
+    <string name="fail_to_load_leave_type"> Để lại gõ không được tìm thấy</string>
+
+    <!-- Leave submission fail message -->
+    <string name="fail_to_submit_leave">Không áp dụng cho nghỉ</string>
+    <!-- Leave submission success message -->
+    <string name="success_in_leave_submission">Các yêu cầu Để lại thành công</string>
+
+    <!-- is staff message -->
+    <string name="is_staff_error">Nhân viên này không thể áp dụng cho việc nghỉ</string>
+
+    <!-- Date formate -->
+    <string name="day_in_date">ngày</string>
+    <string name="month">tháng</string>
+    <string name="year">năm</string>
+    <string name="leave_rejected">Bị từ chối</string>
+    <string name="leave_approved">đã được phê duyệt</string>
+    <string name="leave_tobeapprove">chưa giải quyết</string>
+    <string name="leave_all">tất cả</string>
+    <string name="error_fail_remaining_leave">Thất bại để lấy chiều dài nghỉ</string>
+    <string name="default_time_zone">GMT+08</string>
+
+    <!-- Leader Board -->
+
+    <string name="latest">mới nhất</string>
+    <string name="most_popular">Phổ biến nhất</string>
+    <string name="recommend_leader_board">Khuyến nghị</string>
+    <string name="updated">Cập nhật</string>
+    <string name="title_leader_board">排行榜</string>
+    <string name="category">Thể loại</string>
+    <string name="open">mở</string>
+    <string name="publish_at">Được xuất bản vào</string>
+
+    <!--  -->
+    <string name="leader_board_detail">Chi tiết</string>
+    <string name="download">Tải về</string>
+    <string name="rate">Đánh giá</string>
+    <string name="dialog_description">Chạm vào sao để ghi bàn</string>
+    <string name="star_poor">nghèo</string>
+    <string name="star_fair">hội chợ</string>
+    <string name="star_average">ở giữa</string>
+    <string name="star_good">tốt</string>
+    <string name="star_excellent">xuất sắc</string>
+    <string name="cancel">hủy bỏ</string>
+    <string name="search">tìm kiếm</string>
+    <string name="select_category">Hãy chọn một danh mục</string>
+    <string name="emp_id">Mã hiệu công nhân</string>
+    <string name="emp_name">Tên người lao động</string>
+    <string name="apply_date">Ngày yêu cầu</string>
+    <string name="leave_type">Để lại loại</string>
+    <string name="leave_quota">Để lại Credits</string>
+    <string name="leave_start_date">ngày bắt đầu</string>
+    <string name="leave_end_date">Ngày cuối</string>
+    <string name="leave_period">Để lại Length</string>
+    <string name="approve_description">Xác nhận sự chấp thuận của các yêu cầu nghỉ phép</string>
+    <string name="reject_description">Xác nhận sự từ chối yêu cầu nghỉ phép</string>
+    <string name="pending_leave_title">Các yêu cầu cấp phát Leave</string>
+    <string name="approve_leave_title">Để lại Approval</string>
+    <string name="leave_approve">chính</string>
+    <string name="app_downloading">tải</string>
+    <string name="app_updating">Đang cập nhật</string>
+    <string name="app_download_complete">tải về thành công</string>
+    <string name="app_download_failed">Không tải</string>
+    <string name="app_download_title">Ứng dụng bây giờ là tải</string>
+    <string name="region_dialog_title">Xin hãy điền mật khẩu...</string>
+    <string name="installed">Ứng dụng được cài đặt</string>
+    <string name="hour_left">nhiều giờ trước</string>
+    <string name="day_left">ngày trước</string>
+    <string name="released_at">Được xuất bản vào: </string>
+    <string name="all_category">tất cả</string>
+    <string name="can_not_launch_the_app">Không thể mở ứng dụng</string>   
+    <string name="add">Ngoài ra</string>
+    <string name="add_channel">tăng kênh</string>
+    <string name="add_application">Tăng ứng dụng</string>    
+     <!-- Sample string -->
+    <string name="add">Ngoài ra</string>
+    <string name="supcribed_channel_title">kênh đăng ký</string>
+    <string name="edit">chỉnh sửa</string>
+    <string name="finish">hoàn thành</string>
+    <string name="add_channel_title">tăng kênh</string>
+    <string name="confirm">xác nhận</string>
+    <string name="no_article">không có bài viết nào</string>
+    <string name="langugage">ngôn ngữ</string>
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="subcribed_channel_number">đăng ký kênh / ứng dụng</string>
+    <string name="failed_to_add_channel_or_app">Tăng kênh / thất bại ứng dụng</string>
+    <string name="remove_channel">Di chuyển kênh</string>
+    <string name="remove_channel_message">Bạn sẽ không nhận được thông tin cập nhật từ kênh này</string>
+    <string name="error_rating_app">Hãy chọn giá đúng</string>
+    <string name="application_download_alert">Để lại tải về ứng dụng này?</string>
+    <string name="has_not_save_changes">Theo dõi kênh này đã thay đổi, bạn muốn lưu các thay đổi hoặc loại bỏ chúng?</string>
+    <string name="discard">Vứt bỏ</string>
+</resources>

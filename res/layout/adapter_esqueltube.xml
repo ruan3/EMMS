@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        style="@style/image_center_inside"
+        android:src="@drawable/test_app_img2" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="end"
+        android:textColor="#666666"
+        android:maxLines="2"
+        android:text="调机技巧 - 入门篇" />
+
+    <TextView
+        android:id="@+id/decs"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#999999"
+        android:layout_toRightOf="@+id/icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="观看次数 : 417,967" />
+
+</RelativeLayout>

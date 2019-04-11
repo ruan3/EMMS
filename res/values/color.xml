@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red_default">#a62740</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_tabWidget">#f7f7f7</color>
+    <color name="black_content">#0a0a0a</color>
+    <color name="white_content">#f6f6f6</color>
+    <color name="xam_content">#545454</color>
+    <color name="xam_content_wages">#333333</color>
+    <color name="start_gradient">#f0DFDFDF</color>
+    <color name="end_gradient">#a0ffffff</color>
+	<color name="solid_white">#ffffffff</color>
+    <color name="secondary_text">#ff999999</color>
+    <color name="sub_header">#F6F6F6</color>
+    
+   
+    <color name="list_divider">#cccccc</color>
+    <color name="channel_pay_slip_end">#8B3224</color>
+    <color name="channel_leave_end">#0F5881</color>
+    <color name="channel_task_request_end">#3A571D</color>
+    <color name="channel_pay_slip_start">#E2B033</color>
+    <color name="channel_leave_start">#0DB8B2</color>
+    <color name="channel_app_store">#E73A52</color>
+    <color name="channel_task_request_start">#A1BB40</color>
+    <color name="channel_reorder_menu">#0079FF</color>
+    <color name="text_color_blue">#1B7DF8</color>
+</resources>

@@ -1,0 +1,104 @@
+<project name="findbugs" default="findbugs" xmlns:ivy="antlib:org.apache.ivy.ant">
+    <description>
+		Runs FindBugs on system.
+		Invocation: ant -f findbugs.build.xml
+	</description>
+    
+    <!-- Import the actual build file.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         This is required for the environemnt variables used in this script
+    -->
+    <import file="build.xml" />
+    
+    <!-- Set variables for build directories -->
+    <property name="report.dir" value="reports" />
+    <property name="module" value="findbugs" />
+	<property name="module.organization" value="edu.umd.cs" />
+	<property name="module.version" value="2.0.3" />
+	<property name="module.report.dir" location="${report.dir}/${module}" />
+	<property name="module.install.dir" location="${jar.libs.dir}/${module}" />
+	<property name="module.jar" value="${module}-ant.jar" />
+	
+	<!-- Set module specific attributes -->
+	<property name="findbugs.failonerror" value="true" />
+	    
+    <!-- Make sure Ivy is installed. Get version info from ivy.build.xml. Does not create circular import. -->
+	<import file="ivy.build.xml" />
+	<target name="ivy.check">
+	    <condition property="ivy.available">
+	        <available file="${ivy.install.dir}/${ivy.jar.file}" type="file" />
+	    </condition>    
+	</target>
+	
+	<target name="findbugs.install.ivy" depends="ivy.check" unless="ivy.available">
+	    <antcall target="install.ivy" />
+	</target>
+	
+	<!-- Make sure FindBugs is installed (using Ivy) and the local config file is downloaded. -->
+	<target name="findbugs.install" depends="findbugs.install.ivy">
+	    <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+	    <ivy:retrieve module="${module}" 
+		    organisation="${module.organization}"
+			revision="${module.version}" 
+			pattern="${module.install.dir}/[artifact].[ext]"
+			ivypattern="${module.install.dir}/[artifact].[ext]"
+			sync="true" 
+			inline="true" 
+			log="download-only" 
+			transitive="true" 
+			type="jar, report" />
+	</target>
+	
+	<target name="findbugs" 
+	    depends="findbugs.install, findbugs.tool" 
+	    description="Running FindBugs..." />
+	
+	<target name="findbugs.tool" description="Runs FindBugs">
+	    <taskdef name="findbugs" classpath="${module.install.dir}/${module.jar}" classname="edu.umd.cs.findbugs.anttask.FindBugsTask"/>
+	    
+	    <!-- Set up a path containing the classpath for FindBugs, then convert to a property. -->
+	    <path id="module.classpath">
+			<fileset dir="${module.install.dir}">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+		<pathconvert property="module.classpath" refid="module.classpath" />
+		
+		<gettarget
+		    androidJarFileOut="project.target.android.jar"
+            androidAidlFileOut="project.target.framework.aidl"
+            bootClassPathOut="project.target.class.path"
+            targetApiOut="project.target.apilevel"
+            minSdkVersionOut="project.minSdkVersion" />
+        <dependency
+            libraryFolderPathOut="project.library.folder.path"
+            libraryPackagesOut="project.library.packages"
+            libraryManifestFilePathOut="project.library.manifest.file.path"
+            libraryResFolderPathOut="project.library.res.folder.path"
+            libraryBinAidlFolderPathOut="project.library.bin.aidl.folder.path"
+            libraryRFilePathOut="project.library.bin.r.file.path"
+            libraryNativeFolderPathOut="project.library.native.folder.path"
+            jarLibraryPathOut="project.all.jars.path"
+            targetApi="${project.target.apilevel}"
+            renderscriptSupportMode="${renderscript.support.mode}"
+            buildToolsFolder="${android.build.tools.dir}"
+            renderscriptSupportLibsOut="project.rs.support.libs.path"
+            verbose="${verbose}" />
+	
+		<mkdir dir="${module.report.dir}" />
+	    <findbugs classpath="${module.classpath}"
+	        output="xml"
+	        outputFile="${module.report.dir}/findbugs-results.xml"
+	        failOnError="${findbugs.failonerror}">
+	        <auxClasspath>
+				<pathelement location="${project.target.android.jar}" />
+                <path refid="project.all.jars.path" />
+			</auxClasspath>
+	        <sourcePath path="${source.dir}" />
+	        <class location="${out.dir}" />
+	    </findbugs>
+	</target>
+</project>

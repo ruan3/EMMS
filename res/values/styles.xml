@@ -1,0 +1,79 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="FlipNewsTheme" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="font_big_item">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="font_normal_item">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#d4d4d4</item>
+    </style>
+
+    <style name="include_view_bottom_article">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="number_of_article">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="article_name">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="article_author">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#969696</item>
+    </style>
+
+    <style name="article_summary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#636363</item>
+    </style>
+
+    <style name="user_profile">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#a7273f</item>
+    </style>
+
+    <style name="ProgressDialogWithoutFrame" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:drawable/screen_background_dark_transparent</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="image_center_inside">
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:background">#fff</item>
+    </style>
+    
+    <style name="checkBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">  
+    <item name="android:button">@drawable/subscribe_button</item>  
+</style>  
+
+</resources>

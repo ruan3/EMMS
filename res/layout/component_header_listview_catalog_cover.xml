@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.esquel.epass.ui.CustomImageViewCatalogCover
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_app_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img1"
+        android:layout_alignTop="@+id/img1"
+        android:layout_margin="5dp"
+        android:textColor="#999999" />
+
+    <com.esquel.epass.ui.CustomImageViewCatalogCover
+        android:id="@+id/img2"
+        style="@style/image_center_inside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_margin="5dp"
+        android:src="@drawable/test_app_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img2"
+        android:layout_alignTop="@+id/img2"
+        android:layout_margin="10dp"
+        android:textColor="#999999" />
+
+    <com.esquel.epass.ui.CustomImageViewCatalogCover
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img2"
+        android:layout_margin="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test_app_img" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/img3"
+        android:layout_alignTop="@+id/img3"
+        android:layout_margin="10dp"
+        android:textColor="#999999" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img3"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:textColor="#999999" />
+
+</RelativeLayout>

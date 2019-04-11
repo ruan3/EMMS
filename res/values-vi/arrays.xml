@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="leave_type_map">
+        <item>25:@drawable/icon_annual</item>
+        <item>41:@drawable/icon_marriage</item>
+        <item>51:@drawable/icon_maternity</item>
+        <item>42:@drawable/icon_injury</item>
+        <item>59:@drawable/icon_sick</item>
+        <item>38:@drawable/icon_nopay</item>
+        <item>29:@drawable/icon_paternity</item>
+        <item>44:@drawable/icon_compassionate</item>
+        <item>1004:@drawable/icon_military_service</item>
+        <item>1001:@drawable/icon_exam</item>
+        <item>1002:@drawable/icon_waiting</item>
+        <item>1003:@drawable/icon_court</item>
+        <item>1005:@drawable/icon_breast_feeding</item>
+    </string-array>
+        
+    <string-array name="leave_details_key_name">
+        <item>empolyee_number</item>
+        <item>apply_date</item>
+        <item>leave_type</item>
+        <item>leave_quota</item>
+        <item>start_date</item>
+        <item>end_date</item>
+        <item>leave_period</item>
+    </string-array>
+    
+    <string-array name="select_leave_status">
+        <item>Phê duyệt</item>
+        <item>Từ chối</item>
+    </string-array>
+    
+    <string-array name="dialog_option_app_n_channel">
+        <item>Tăng kênh</item>
+        <item>Tăng ứng dụng</item>
+    </string-array>
+</resources>

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "abc",
+    "category": "cat-abc",
+    "description": "desc-abc",
+    "average_rating": 4.5
+  },
+  {
+    "name": "abc",
+    "category": "cat-abc",
+    "description": "desc-abc",
+    "average_rating": 1
+  },
+  {
+    "name": "def",
+    "category": "cat-def",
+    "description": "desc-def",
+    "average_rating": 5
+  },
+  {
+    "name": "ghi",
+    "category": "cat-ghi",
+    "description": "desc-ghi",
+    "average_rating": 3
+  },
+  {
+    "name": "jkl",
+    "category": "cat-jkl",
+    "description": "desc-jkl",
+    "average_rating": 2
+  },
+  {
+    "name": "mno",
+    "category": "cat-mno",
+    "description": "desc-mno",
+    "average_rating": 4
+  },
+  {
+    "name": "pqr",
+    "category": "cat-pqr",
+    "desc": "desc-pqr",
+    "average_rating": 2.5
+  }
+]

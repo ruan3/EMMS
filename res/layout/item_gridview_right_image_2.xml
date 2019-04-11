@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.esquel.epass.ui.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2dp" >
+
+    <TextView
+        android:id="@+id/like_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/like_article_list"
+        android:drawablePadding="5dp"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/article_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="2dp"
+        android:layout_toLeftOf="@id/like_count"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="true" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/summary"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/summary"
+        style="@style/article_summary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_toLeftOf="@+id/icon"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/summary"
+        android:ellipsize="end"
+        android:gravity="bottom"
+        android:maxLength="30"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/department"
+        android:textColor="#636363"
+        android:textSize="14sp" />
+
+   
+
+</com.esquel.epass.ui.CustomRelativeLayout>

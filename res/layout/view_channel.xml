@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:onClick="selectChannel"
+    android:tag="channel" >
+
+    <RelativeLayout
+        android:id="@+id/channel_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/thumb"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#444444"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@null"
+            android:tag="thumb" />
+
+        <TextView
+            android:id="@+id/channel_name"
+            style="@style/font_normal_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:tag="channel_name"
+            android:text="@null"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="@dimen/width_number_article"
+            android:layout_height="@dimen/height_number_article"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="-2dp"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/bg_number_of_article"
+            android:gravity="center"
+            android:tag="number_of_article"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/last_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@android:color/darker_gray" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/add_channel_button" />
+    </RelativeLayout>
+
+</RelativeLayout>

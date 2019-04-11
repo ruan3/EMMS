@@ -1,0 +1,92 @@
+<project name="checkstyle" default="checkstyle" xmlns:ivy="antlib:org.apache.ivy.ant">
+	<description>
+		Runs checkstyle on system, using rules in:
+		lib/checkstyle/checkstyle.modules.xml
+		Invocation: ant -f checkstyle.build.xml
+		For more information about checkstyle, goto
+		http://checkstyle.sourceforge.net
+	</description>
+
+	<!-- Import the actual build file.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         This is required for the environemnt variables used in this script
+    -->
+	<import file="build.xml"/>
+	
+	<!-- Set variables for build directories -->
+	<property name="report.dir" value="reports" />
+	<property name="module" value="checkstyle" />
+	<property name="module.organization" value="com.puppycrawl" />
+	<property name="module.version" value="5.4" />
+	<property name="module.report.dir" location="${report.dir}/${module}" />
+	<property name="module.install.dir" location="${jar.libs.dir}/${module}" />
+	<property name="module.jar" value="${module}-all.jar" />
+	
+	<!-- Set module specific attributes -->
+	<property name="checkstyle.failOnViolation" value="false" />
+	<property name="checkstyle.config.file" value="checkstyle.modules.xml" />
+	<property name="checkstyle.config.file.path" location="${checkstyle.config.file}" />
+	
+	<path id="checkstyle.path" location="${module.install.dir}/${module.jar}" />  
+	
+	<!--  Make sure Checkstyle rules are present -->
+	<available file="${checkstyle.config.file.path}" type="file" property="checkstyle.config.available" />
+	
+	<!-- Make sure Ivy is installed. Get version info from ivy.build.xml. Does not create circular import. -->
+	<import file="ivy.build.xml" />
+	<target name="ivy.check">
+	    <condition property="ivy.available">
+	        <available file="${ivy.install.dir}/${ivy.jar.file}" type="file" />
+	    </condition>    
+	</target>
+	
+	<target name="checkstyle.install.ivy" depends="ivy.check" unless="ivy.available">
+	    <antcall target="install.ivy" />
+	</target>
+
+	<!-- Make sure Checkstyle is installed (using Ivy) and the local config file is downloaded. -->
+	<target name="checkstyle.install" depends="checkstyle.install.ivy">
+	    <taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+		<ivy:retrieve module="${module}" 
+		    organisation="${module.organization}"
+			revision="${module.version}" 
+			pattern="${module.install.dir}/[artifact].[ext]"
+			sync="true" 
+			inline="true" 
+			log="download-only" 
+			transitive="false" 
+			conf="bundled"
+			type="jar, report" />
+	</target>
+
+	<path id="module.classpath">
+		<pathelement path="${build.dir}/classes" />
+		<path refid="compile.classpath" />
+	</path>
+
+	<target name="checkstyle"
+		depends="checkstyle.install, checkstyle.tool, checkstyle.report"
+		description="Running checkstyle...." />
+
+	<target name="checkstyle.tool" 
+	    description="Checks the style of the sources and reports issues.">
+		<taskdef resource="checkstyletask.properties" classpath="${module.install.dir}/${module.jar}" />
+		<mkdir dir="${module.report.dir}" />
+		<checkstyle config="${checkstyle.config.file.path}" failOnViolation="${checkstyle.failOnViolation}">
+			<fileset dir="${source.dir}" includes="**/*.java" />
+			<formatter type="plain" />
+			<formatter type="xml" tofile="${module.report.dir}/checkstyle-results.xml" />
+		</checkstyle>
+	</target>
+
+	<target name="checkstyle.report" description="Generates an HTML report for Checkstyle.">
+		<xslt in="${module.report.dir}/checkstyle-results.xml" out="${module.report.dir}/index.html" style="${module.install.dir}/checkstyle-noframes.xsl">
+			<param name="title" expression="Checkstyle Report" />
+			<param name="module" expression="${system.name}" />
+		</xslt>
+	</target>
+
+</project>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:id="@+id/for_position_first"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_menu"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="2" >
+
+       <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:tag="channel" >
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@null"
+                android:tag="thumb" />
+
+            <View 
+                android:id="@+id/filter_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                ></View>
+            <TextView
+                android:id="@+id/channel_name"
+                style="@style/font_big_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:gravity="bottom"
+                android:tag="channel_name"
+                android:text="@null"
+                android:textStyle="bold" />
+
+
+           
+
+            <TextView
+                android:layout_width="@dimen/width_number_article"
+                android:layout_height="@dimen/height_number_article"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="-2dp"
+                android:layout_marginRight="-2dp"
+                android:background="@drawable/bg_number_of_article"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:tag="number_of_article"
+                android:textColor="#fff"
+                android:visibility="visible" />
+        </RelativeLayout>
+        <!-- Row 1 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <include
+                    android:id="@+id/tab1"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/margin_view_channel"
+                    android:layout_marginTop="@dimen/margin_view_channel"
+                    android:layout_weight="1"
+                    android:background="#ff0000"
+                    layout="@layout/view_channel" />
+
+                <include
+                    android:id="@+id/tab2"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/margin_view_channel"
+                    android:layout_marginTop="@dimen/margin_view_channel"
+                    android:layout_weight="1"
+                    layout="@layout/view_channel" />
+            </LinearLayout>
+            <!-- Row 2 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                <include
+                    android:id="@+id/tab3"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="@dimen/margin_view_channel"
+                    android:layout_marginTop="@dimen/margin_view_channel"
+                    android:layout_weight="1"
+                    layout="@layout/view_channel" />
+
+                <include
+                    android:id="@+id/tab4"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/margin_view_channel"
+                    android:layout_marginTop="@dimen/margin_view_channel"
+                    android:layout_weight="1"
+                    layout="@layout/view_channel" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    
+
+</RelativeLayout>

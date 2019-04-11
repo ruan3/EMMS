@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f7f7" >
+
+    <include
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_include_view_bottom_article"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        layout="@layout/view_bottom_article_list" />
+
+    <include
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_include_view_bottom_article"
+        android:layout_alignParentTop="true"
+        layout="@layout/view_top_menu_app" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_menu"
+        android:layout_below="@+id/top_menu"
+        android:fadingEdge="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <com.esquel.epass.ui.CustomImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+        		style="@style/image_center_inside"
+                android:src="@drawable/test_app_image" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Fabric App"
+                android:textColor="#000"
+                android:textSize="28sp"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/decs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="年中秋节晚宴盛况"
+                android:textColor="#9b9b9b"
+                android:textSize="26sp"
+                android:typeface="serif" />
+
+            <WebView
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/decs"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

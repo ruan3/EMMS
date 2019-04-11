@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EsquelPass</string>
+    <string name="flip_down">Pull down to refresh</string>
+    <string name="release_finger">Press here to update</string>
+	<string name="sort_by">Sort By</string>
+    <!-- title activity -->
+    <string name="title_activity_leave_list">My Requests</string>
+    <string name="title_activity_leave_type">Please select a leave type</string>
+    <string name="title_activity_leave_rejected">Rejected Reason</string>
+    <string name="title_region">Region/Business</string>
+    <string name="title_profile_detail">Personal Settings</string>
+    <string name="epay_slip_working_hour">Working Hour Details (Hour)</string>
+    <string name="epay_slip_income">Wage Details (Yuan)</string>
+    <string name="epay_slip_deduction">Withholding Details (Yuan)</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="day">Day</string>
+    <string name="save">Save</string>
+    <string name="print_time">Printing time</string>
+    <string name="save_epay_slip">Succeed to save in</string>
+    <string name="dollar">Yuan</string>
+    <string name="warning_title">Tips</string>
+    <string name="warning_message_no_user">Please fill in Employee ID</string>
+    <string name="warning_message_no_password">Please fill in password</string>
+    <string name="warning_message_confirm">Confirm</string>
+    <string name="message_no_payslip">No wage information</string>
+    <string name="no_any_channel">No search result</string>
+    <string name="content">Contents</string>
+    <string name="network_error">Please check your Internet connection</string>
+    <string name="login_error">Employee ID or password is incorrect</string>
+    <string name="password_hint">Password</string>
+    <string name="downloading">Downloading...</string>
+    <string name="download_complete">Download Successfully</string>
+    <string name="login_id_hint">Factory Label Number</string>
+    <string name="login_password_hint">Default Password</string>
+    <string name="login_description">*If your password has not been changed before, the default password should be the last 6 digits of your birthday printed on identity card. (e.g. Your birthday is 19880101, the default password should be 880101)</string>
+    <string name="error_channel">No new article</string>
+    <string name="retry">Try Again</string>
+    <string name="ok">Confirm</string>
+    <string name="select">The number of articles displayed per page</string>
+    <string name="tab1">All\n</string>
+    <string name="tab2">Pending\n</string>
+    <string name="tab3">Completed\n</string>
+    <string name="tab4">Rejected\n</string>
+    <string name="user_id">Employee ID</string>
+    <string name="name">Name</string>
+    <string name="requester_salary_date">*Payday</string>
+    <string name="location">*Factory</string>
+    <string name="location_department">*Department</string>
+    <string name="task_type">*Certification Type</string>
+    <string name="usage">*Certification Usage</string>
+    <string name="receive_method">*Receiving Method</string>
+    <string name="receive_address">*Shipping Address</string>
+    <string name="phone">*Contact Number</string>
+    <string name="request_remark">Remark</string>
+    <string name="reject_reason">Rejected Reason</string>
+    <string name="fail_to_get_task">Certification not found</string>
+    <string name="error_fill_phone">Please fill in contact number</string>
+    <string name="error_fill_address">Please fill in shipping address</string>
+    <string name="success_submit_request">Successful Item Requests</string>
+    <string name="failed_submit_request">Fail to apply for issue</string>
+    <string name="scroll_view">Scrolling page</string>
+    <string name="menu_refresh">Updating…</string>
+    <string name="refresh_pull_down">Updating…</string>
+    <string name="refresh_release">Updating…</string>
+    <string name="loading">Updating…</string>
+    <string name="refresh_pull_up">Updating…</string>
+    <string name="error_get_location">Information not found</string>
+    <string name="error_without_receive_address">No shipping address</string>
+    <string name="error_get_task">Certification not found</string>
+    <string name="error_token_expired">Your login has expired. Please login again.</string>
+    <string name="error_getting_request">New to-do issue not found</string>
+    <string name="task_form_description">Note: Items marked with "*" are required</string>
+    <string name="remember_password">Remember Password</string>
+    <string name="login">Login</string>
+    <string name="reg_task">Certification Request</string>
+    <string name="my_task">My Requests</string>
+    <string name="task_preview">Certification Model</string>
+    <string name="china">China</string>
+    <string name="page_showing_description">The number of articles displayed per page</string>
+    <string name="setting">Settings</string>
+    <string name="recommend">Recommendation</string>
+    <string name="epay_slip">Wage Self-Check</string>
+    <string name="more">More</string>
+    <string name="epay_slip_print">Wage Details</string>
+    <string name="epay_slip_print_salary">Wage</string>
+    <string name="logout">Logout</string>
+    <string name="working_time">Working Hours</string>
+    <string name="salary">Wage</string>
+    <string name="allowance">Welfare</string>
+    <string name="deduction">Withholding</string>
+    <string name="slip_print">Wage Details</string>
+    <string name="article">Article</string>
+    <string name="new_task">Add to-do issue</string>
+    <string name="submit">Submit</string>
+
+    <!-- Leave status -->
+    <string name="approved">Approved</string>
+    <string name="to_be_approved">Pending</string>
+    <string name="rejected">Rejected</string>
+
+    <!-- Leave unit -->
+    <string name="hour">Hour</string>
+    <string name="day">Day</string>
+
+    <!-- Leave generation detail array -->
+    <string-array name="leave_details_key">
+        <item>Employee ID</item>
+        <item>Request Date</item>
+        <item>Leave Types</item>
+        <item>Leave Credits</item>
+        <item>Start Date</item>
+        <item>End Date</item>
+        <item>Để lại Length</item>
+    </string-array>
+
+    <string name="channel_epay_slip">Wage Self-Check</string>
+    <string name="channel_to_do_list">Certification Self-Applying</string>
+    <string name="channel_apply_leave">My Leave Requests</string>
+    <string name="channel_app_store">AppStore</string>
+
+    <!-- Leave type fail message -->
+    <string name="fail_to_load_leave_type"> Leave type not found</string>
+
+    <!-- Leave submission fail message -->
+    <string name="fail_to_submit_leave">Fail to apply for leave</string>
+    <!-- Leave submission success message -->
+    <string name="success_in_leave_submission">Successful Leave Requests</string>
+
+    <!-- is staff message -->
+    <string name="is_staff_error">This employee cannot apply for leave</string>
+
+    <!-- Date formate -->
+    <string name="day_in_date">day</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="leave_rejected">Rejected</string>
+    <string name="leave_approved">Approved</string>
+    <string name="leave_tobeapprove">Pending</string>
+    <string name="leave_all">All</string>
+    <string name="error_fail_remaining_leave">Fail to retrieve leave length</string>
+    <string name="default_time_zone">GMT+08</string>
+
+    <!-- Leader Board -->
+
+    <string name="latest">Latest</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="recommend_leader_board">Recommendation</string>
+    <string name="updated">Update</string>
+    <string name="title_leader_board">排行榜</string>
+    <string name="category">Category</string>
+    <string name="open">Open</string>
+    <string name="publish_at">Published at</string>
+
+    <!--  -->
+    <string name="leader_board_detail">Details</string>
+    <string name="download">Download</string>
+    <string name="rate">Rating</string>
+    <string name="dialog_description">Tap the stars to score</string>
+    <string name="star_poor">Poor</string>
+    <string name="star_fair">Fair</string>
+    <string name="star_average">Moderate</string>
+    <string name="star_good">Good</string>
+    <string name="star_excellent">Excellent</string>
+    <string name="cancel">Cancel</string>
+    <string name="search">Search</string>
+    <string name="select_category">Please select a category</string>
+    <string name="emp_id">Employee ID</string>
+    <string name="emp_name">Employee Name</string>
+    <string name="apply_date">Request Date</string>
+    <string name="leave_type">Leave Types</string>
+    <string name="leave_quota">Leave Credits</string>
+    <string name="leave_start_date">Start Date</string>
+    <string name="leave_end_date">End Date</string>
+    <string name="leave_period">Leave Length</string>
+    <string name="approve_description">Confirm the approval of the leave request</string>
+    <string name="reject_description">Confirm the rejection of the leave request</string>
+    <string name="pending_leave_title">Pending Leave Requests</string>
+    <string name="approve_leave_title">Leave Approval</string>
+    <string name="leave_approve">Approval</string>
+    <string name="app_downloading">Downloading</string>
+    <string name="app_updating">Updating</string>
+    <string name="app_download_complete">Download Successfully</string>
+    <string name="app_download_failed">Fail to download</string>
+    <string name="app_download_title">Application is now downloading</string>
+    <string name="region_dialog_title">Please select a region</string>
+    <string name="installed">Application is installed</string>
+    <string name="hour_left">hours ago</string>
+    <string name="day_left">days ago</string>
+    <string name="released_at">Published at: </string>
+    <string name="all_category">All</string>
+    <string name="can_not_launch_the_app">Cannot open application</string>   
+    <string name="add">Add</string>
+    <string name="add_channel">Add Channel</string>
+    <string name="add_application">Add Application</string>    
+     <!-- Sample string -->
+    <string name="add">Add</string>
+    <string name="supcribed_channel_title">Subscribed Channel</string>
+    <string name="edit">Edit</string>
+    <string name="finish">Finish</string>
+    <string name="add_channel_title">Add Channel</string>
+    <string name="confirm">Confirm</string>
+    <string name="no_article">No any article</string>
+    <string name="langugage">Language</string>
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="subcribed_channel_number">Subcribed Channel/Application</string>
+    <string name="failed_to_add_channel_or_app">Fail to add channel/application</string>
+    <string name="remove_channel">Remove channel</string>
+    <string name="remove_channel_message">You will not receive updates from this channel</string>
+    <string name="error_rating_app">Please select a valid score</string>
+    <string name="application_download_alert">To re-download this application?</string>
+    <string name="has_not_save_changes">The subscribed channels have changed, do you want to save or discard?</string>
+    <string name="discard">Discard</string>
+</resources>

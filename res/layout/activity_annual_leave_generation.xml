@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AnnualLeaveActivity" >
+
+    <include
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_include_view_bottom_article"
+        android:layout_alignParentTop="true"
+        layout="@layout/view_top_menu_leave_generation" />
+
+    <!--
+         <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tab"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc" />
+
+    -->
+
+    <com.esquel.epass.ui.AnimatedExpandableListView
+        android:id="@+id/listview_leaveDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_menu"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:divider="#cccccc"
+        android:dividerHeight="1dp" >
+    </com.esquel.epass.ui.AnimatedExpandableListView>
+
+</RelativeLayout>

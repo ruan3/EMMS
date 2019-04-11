@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/article_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_toLeftOf="@id/like_count"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="true" />
+    
+    <LinearLayout
+        android:id="@+id/like_count_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:textColor="@color/start_gradient"           
+            android:layout_gravity="center_vertical"            
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/like_article_list"
+            android:layout_gravity="center_vertical"            
+            android:drawablePadding="5dp"
+             android:paddingLeft="0dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"
+        android:layout_above="@id/like_count_wrapper"
+        android:layout_below="@id/title" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.6"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/summary"
+            style="@style/article_summary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/like_count_wrapper"
+            android:layout_below="@id/icon"
+            android:layout_weight="0.4"
+            android:ellipsize="end" />
+    </LinearLayout>
+
+</RelativeLayout>

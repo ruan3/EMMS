@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2dp" >
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/article_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:orientation="horizontal" >
+		
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            >
+            <ImageView
+            	android:id="@+id/icon"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_centerHorizontal="true"
+            	android:layout_alignParentTop="true"
+            	 />
+        </RelativeLayout>
+        
+
+        <View
+            android:layout_width="15dp"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"       
+            >
+
+            <TextView
+                android:id="@+id/summary"
+                style="@style/article_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3" />
+
+            <LinearLayout
+                android:id="@+id/bottom_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/summary"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="right|bottom"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/date"
+                    android:textColor="@color/start_gradient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+            		android:layout_gravity="bottom"                  
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+            		android:layout_gravity="bottom"                  
+                    android:drawableLeft="@drawable/like_article_list"
+                    android:drawablePadding="5dp"
+                     android:paddingLeft="0dp"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

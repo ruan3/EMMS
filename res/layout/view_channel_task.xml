@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/channel_task_request_start"
+    android:onClick="selectChannel"
+    android:tag="channel" >
+
+    <ImageView
+        android:id="@+id/thumb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_task"
+        android:tag="thumb" />
+
+    <TextView
+        android:id="@+id/channel_name"
+        style="@style/font_normal_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:tag="channel_name"
+        android:text="@null"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="@dimen/width_number_article"
+        android:layout_height="@dimen/height_number_article"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="-2dp"
+        android:layout_marginRight="-2dp"
+        android:background="@drawable/bg_number_of_article"
+        android:gravity="center"
+        android:tag="number_of_article"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

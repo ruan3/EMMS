@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_toolbar"
+    android:background="#a62740" >
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/icon_back_white" />
+
+    <ImageButton
+        android:id="@+id/btn_subscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/btn_back"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:paddingLeft="0dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/icon_subscribe"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/title_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:textColor="#d0ffffff" >
+        <requestFocus />
+    </TextView> 
+    
+
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_toolbar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:background="@null"
+        android:contentDescription="@null"
+        android:src="@drawable/menu" />
+	<CheckBox 
+        android:id="@+id/subscribe_channel"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/title_menu"
+        android:visibility="invisible"
+        android:enabled="true"
+        android:focusable="true"
+        style="@style/checkBoxStyle"
+        />
+	<!-- 
+    <requestFocus
+        android:layout_alignLeft="@+id/title_menu"
+        android:layout_alignTop="@+id/title_menu"
+        android:layout_marginLeft="52dp" />
+
+    <requestFocus
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_back" />
+-->
+</RelativeLayout>

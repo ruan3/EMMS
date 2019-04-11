@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:flipview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <com.esquel.epass.lib.flipview.FlipView
+        android:id="@+id/flip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/top_menu2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_include_view_bottom_article"
+        android:layout_alignParentTop="true"
+        layout="@layout/view_top_article_list"
+        android:visibility="visible"/>"
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_menu2"
+        android:dividerHeight="1dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="working_hours_field">
+        <item >stdworkinghours</item>
+        <item >normalworkinghours</item>
+        <item >ot_hours_normal</item>
+        <item >ot_hours_restdays</item>
+        <item >ot_hours_statutoryholidays</item>
+        <item >total_working_hours</item>
+    </string-array>
+    <string-array name="income_field">
+        <item >basicpay</item>
+        <item >ot_pay_normal</item>
+        <item >ot_pay_restdays</item>
+        <item >ot_pay_statutoryholidays</item>
+        <item >grosspay</item>       
+    </string-array>
+    <string-array name="deduction_field">
+        <item >admindeduction</item>
+        <item >commercialinsurancededuction</item>
+        <item >housingprovidentfund</item>
+        <item >incometaxwithheld</item>
+        <item >otherdeductions_nontaxable</item>
+        <item >otherdeductions_taxable</item>
+        <item >social_insurance</item>
+        <item >total_deduction</item>
+    </string-array>
+    <string-array name="benefit">
+        <item >leave_pay</item>
+        <item >performanceincentive</item>
+        <item >otherbonus</item>
+        <item >allowance_taxable</item>
+        <item >adjforlastmonth</item>
+        <item >yearsofserviceaward</item>
+    </string-array>
+    <string-array name="user_field">
+        <item >fempcode</item>
+        <item >fcompanyname</item>
+        <item >fdepartmentname</item>
+        <item >productionlinecode</item>
+        <item >fpaytypename</item>
+        <item >monthlyrate</item>
+        <item >hourlyrate</item>
+        <item >minimumwage</item>
+    </string-array>
+    
+</resources>

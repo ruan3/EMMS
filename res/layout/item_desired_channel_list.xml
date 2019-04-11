@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/desire_channel_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_tabWidget" >
+
+        <TextView
+            android:id="@+id/deisre_channel_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Title"
+            android:textSize="15dp" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/desired_channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desire_channel_ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text=""
+        android:textSize="15dp" />
+
+</RelativeLayout>

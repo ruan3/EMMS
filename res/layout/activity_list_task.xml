@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_menu"
+        layout="@layout/view_top_list_task" />
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_menu"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_tab"
+        android:padding="1dp"
+        android:weightSum="2" >
+
+        <TextView
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#a62740"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectTab2"
+            android:padding="5dp"
+            android:tag="1"
+            android:text="@string/reg_task"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#f7f7f7"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectTab2"
+            android:padding="5dp"
+            android:tag="2"
+            android:text="@string/my_task"
+            android:textColor="#a62740"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/task_preview"
+        android:textColor="#111"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:numColumns="2" >
+    </GridView>
+
+    <include
+        android:id="@+id/cover_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        layout="@layout/activity_to_do"
+        android:visibility="gone" />
+
+</RelativeLayout>

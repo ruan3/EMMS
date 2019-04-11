@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/top_menu"
+        layout="@layout/view_top_menu_list_task_04" />
+
+    <ListView
+        android:id="@+id/listview_reorder_scribed_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/reorder_menu_ll"
+        android:layout_below="@+id/top_menu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/reorder_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="start|center" >
+
+        <ImageView
+            android:id="@+id/addicon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_margin="10dp"
+            android:background="@color/black_content"
+            android:src="@drawable/icon_plus" />
+
+        <TextView
+            android:id="@+id/reorder_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textColor="@color/channel_reorder_menu" />
+    </LinearLayout>
+
+</RelativeLayout>

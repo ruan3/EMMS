@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:visibility="visible" >
+
+    <RelativeLayout
+        android:id="@+id/rl_tail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/tvSelect_new_order08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="接收方式"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvDoneNewOrder04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="确认"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_create_new_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_white_arrow_back" />
+
+        <ImageView
+            android:id="@+id/img_create_new_order_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@+id/img_create_new_order_back"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_black_arrow_next" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_options" >
+
+        <ListView
+            android:id="@+id/lv_select"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_options"
+            android:layout_below="@+id/txtSelectAll"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:divider="#dadada"
+            android:dividerHeight="1dp"
+            android:drawSelectorOnTop="false"
+            android:listSelector="@android:color/transparent"
+            android:minHeight="@dimen/height_min_options" >
+        </ListView>
+
+        <View
+            android:id="@+id/blur_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_blur_options"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_blur_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_blur_half_options"
+            android:layout_below="@+id/blur_top"
+            android:background="@color/end_gradient" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_blur_half_options"
+            android:layout_above="@+id/blur_bottom"
+            android:background="@color/end_gradient" />
+
+        <View
+            android:id="@+id/blur_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_blur_options"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_blur_bottom" />
+    </RelativeLayout>
+
+</LinearLayout>

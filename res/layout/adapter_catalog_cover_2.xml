@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:paddingTop="10dp"
+    android:layout_height="wrap_content" >
+
+    <com.esquel.epass.ui.CustomImageViewCatalogCover
+        android:id="@+id/icon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        style="@style/image_center_inside"
+        android:src="@null" />
+	<RelativeLayout 
+	    android:id="@+id/filter_image"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    ></RelativeLayout>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:textColor="#fff"
+        android:text="香港" />
+
+</RelativeLayout>

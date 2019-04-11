@@ -1,0 +1,15 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+	<style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+    </style>
+    <style name="ProgressDialogWithoutFrame" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+        <item name="android:windowBackground">@android:drawable/screen_background_dark_transparent</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+</resources>

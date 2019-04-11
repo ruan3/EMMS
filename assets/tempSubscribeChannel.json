@@ -1,0 +1,32 @@
+[
+  {
+    "cahnnelname": "channel 0",
+    "esquelnews": true ,
+     "isHeader": true
+  },
+  {
+    "cahnnelname": "channel 1",
+    "esquelnews": true ,
+    "isHeader": false
+  },
+  {
+    "cahnnelname": "channel 2",
+    "esquelnews": true ,
+    "isHeader": false
+  },
+  {
+    "cahnnelname": "channel 3",
+    "esquelnews": false ,
+    "isHeader": true
+  },
+  {
+    "cahnnelname": "channel 4",
+    "esquelnews": false ,
+    "isHeader": false
+  },
+  {
+    "cahnnelname": "channel 5",
+    "esquelnews": true ,
+    "isHeader": false
+  }
+]

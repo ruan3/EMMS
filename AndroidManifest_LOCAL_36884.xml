@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.esquel.epass"
+    android:versionCode="37"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.esquel.epass.activity.AppApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/esquel_pass_icon"
+        android:label="@string/app_name"
+        android:theme="@style/FlipNewsTheme" >
+        <activity
+            android:name="com.esquel.epass.activity.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveLeaderListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveGenerationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveTypeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveRejectedActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ChannelListFlipActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ArticleListActivity"
+            android:label="@string/title_activity_article_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ArticleViewActivity"
+            android:label="@string/title_activity_article_view"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.UserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.EnterpriseActivity"
+            android:label="@string/title_activity_enterprise_apps_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.RewardsActivity"
+            android:label="@string/title_activity_rewards"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.FAQActivity"
+            android:label="@string/title_activity_faq_chat"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.EsquelTubeActivity"
+            android:label="@string/title_activity_esqueltube"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.NewAppArticle"
+            android:label="@string/title_activity_new_app_article_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AppUpdateListActivity"
+            android:label="@string/title_activity_app_update"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.PrivateConversationActivity"
+            android:label="@string/title_activity_private_conversation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.SampleChannelListFlipActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.UserInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ProfileDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ContentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.SaveProfileDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.EditBookMarkActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.SlipActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ZoomActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.CatalogCoverActivity"
+            android:label="@string/title_activity_catalog_cover"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.FillFormActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.TaskActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ViewPdfActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.ToDoList09"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.RejectReasonActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cx.hell.android.pdfview.OpenFileActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+                <category android:name="android.intent.category.BROWSABLE" >
+                </category>
+
+                <data
+                    android:mimeType="application/pdf"
+                    android:scheme="file" >
+                </data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+                <category android:name="android.intent.category.BROWSABLE" >
+                </category>
+
+                <data
+                    android:mimeType="application/pdf"
+                    android:scheme="content" >
+                </data>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+
+                <category android:name="android.intent.category.DEFAULT" >
+                </category>
+                <category android:name="android.intent.category.BROWSABLE" >
+                </category>
+
+                <data
+                    android:host="*"
+                    android:pathPattern=".*\.[pP][dD][fF]"
+                    android:scheme="file" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualAppliedLeaveActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveGenerationActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveRejectedActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.esquel.epass.activity.AnnualLeaveTypeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="543f2613fd98c5720901c2fa" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="ESQUELPass" >
+        </meta-data>
+    </application>
+
+</manifest>

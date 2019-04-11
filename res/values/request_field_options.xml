@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="usage">
+        <item >贷款</item>
+        <item >意外保险办理</item>
+        <item >低保房申请</item>
+    </string-array>
+    <string-array name="receive_method">
+        <item>信件邮寄</item>
+        <item>员工自取</item>
+    </string-array>
+    <string-array name="requester_salary_date">
+        <item >每月5日</item>
+        <item >每月10日</item>
+    </string-array>
+    
+</resources>

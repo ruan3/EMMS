@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">溢达通</string>
+    <string name="flip_down">下拉刷新</string>
+    <string name="release_finger">按此更新</string>
+	<string name="sort_by">Sort By</string>
+    <!-- title activity -->
+    <string name="title_activity_leave_list">我的申请</string>
+    <string name="title_activity_leave_type">选择请假类型</string>
+    <string name="title_activity_leave_rejected">被退回原因</string>
+    <string name="title_region">区域/业务</string>
+    <string name="title_profile_detail">个人設定</string>
+    <string name="epay_slip_working_hour">工时明细(小时)</string>
+    <string name="epay_slip_income">工资明细(元)</string>
+    <string name="epay_slip_deduction">代扣明细(元)</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="save">保存</string>
+    <string name="print_time">打印时间</string>
+    <string name="save_epay_slip">成功保存到</string>
+    <string name="dollar">元</string>
+    <string name="warning_title">溫馨提示</string>
+    <string name="warning_message_no_user">请输入员工号,谢谢!</string>
+    <string name="warning_message_no_password">请输入用戶密码,谢谢!</string>
+    <string name="warning_message_confirm">确定</string>
+    <string name="message_no_payslip">沒有任何工资资料</string>
+    <string name="no_any_channel">没有查询结果</string>
+    <string name="content">内容</string>
+    <string name="network_error">请检测网络是否正常,谢谢!</string>
+    <string name="login_error">员工号不存在或密码错误</string>
+    <string name="password_hint">密码</string>
+    <string name="downloading">下载中...</string>
+    <string name="download_complete">下载完成</string>
+    <string name="login_id_hint">厂牌号</string>
+    <string name="login_password_hint">预充值系统密码</string>
+    <string name="login_description">*如未更改过，默认密码为身份证出生年月日最后6位（如出生年月日为19880101，默认密码为880101)</string>
+    <string name="error_channel">沒有任何最新文章</string>
+    <string name="retry">重试</string>
+    <string name="ok">确认</string>
+    <string name="select">每页显示的文章数目</string>
+    <string name="tab1">全部\n</string>
+    <string name="tab2">待处理\n</string>
+    <string name="tab3">已完成\n</string>
+    <string name="tab4">被退回\n</string>
+    <string name="user_id">员工号</string>
+    <string name="name">姓名</string>
+    <string name="requester_salary_date">*发薪日</string>
+    <string name="location">*分厂</string>
+    <string name="location_department">*部门</string>
+    <string name="task_type">*证明类型</string>
+    <string name="usage">*证明用途</string>
+    <string name="receive_method">*接收方式</string>
+    <string name="receive_address">*收件地址</string>
+    <string name="phone">*联系电话</string>
+    <string name="request_remark">备注</string>
+    <string name="reject_reason">被退回原因</string>
+    <string name="fail_to_get_task">找不到该证明</string>
+    <string name="error_fill_phone">请填写联系电话</string>
+    <string name="error_fill_address">请填写收件地址</string>
+    <string name="success_submit_request">成功申请事项</string>
+    <string name="failed_submit_request">申请事项失敗</string>
+    <string name="scroll_view">滚页</string>
+    <string name="menu_refresh">更新中…</string>
+    <string name="refresh_pull_down">更新中…</string>
+    <string name="refresh_release">更新中…</string>
+    <string name="loading">更新中…</string>
+    <string name="refresh_pull_up">更新中…</string>
+    <string name="error_get_location">找不到资料</string>
+    <string name="error_without_receive_address">沒有收件地址</string>
+    <string name="error_get_task">找不到任何辨理证明</string>
+    <string name="error_token_expired">登入已逾期，请重新登入</string>
+    <string name="error_getting_request">找不到新的待辨事项</string>
+    <string name="task_form_description">注: 带“*”的项目是必填项</string>
+    <string name="remember_password">记住密码</string>
+    <string name="login">登录</string>
+    <string name="reg_task">申请证明</string>
+    <string name="my_task">我的申请</string>
+    <string name="task_preview">证明模板预览</string>
+    <string name="china">中国</string>
+    <string name="page_showing_description">每页显示的文章数目</string>
+    <string name="setting">设定</string>
+    <string name="recommend">推\n荐</string>
+    <string name="epay_slip">工资自助查询</string>
+    <string name="more">更多</string>
+    <string name="epay_slip_print">员工工资条</string>
+    <string name="epay_slip_print_salary">员工工资条工资</string>
+    <string name="logout">登出</string>
+    <string name="working_time">工时</string>
+    <string name="salary">工资</string>
+    <string name="allowance">福利</string>
+    <string name="deduction">代扣</string>
+    <string name="slip_print">工资条</string>
+    <string name="article">文章</string>
+    <string name="new_task">新增待办事项</string>
+    <string name="submit">提交</string>
+
+    <!-- Leave status -->
+    <string name="approved">已批准</string>
+    <string name="to_be_approved">待处理</string>
+    <string name="rejected">被退回</string>
+
+    <!-- Leave unit -->
+    <string name="hour">小时</string>
+    <string name="day">天</string>
+
+    <!-- Leave generation detail array -->
+    <string-array name="leave_details_key">
+        <item>员工工号</item>
+        <item>申请日期</item>
+        <item>假期类型</item>
+        <item>假期额度</item>
+        <item>开始日期</item>
+        <item>结束日期</item>
+        <item>请假时长</item>
+    </string-array>
+
+    <string name="channel_epay_slip">工资自助查询</string>
+    <string name="channel_to_do_list">自助办理证明</string>
+    <string name="channel_apply_leave">我的请假申请</string>
+    <string name="channel_app_store">AppStore</string>
+
+    <!-- Leave type fail message -->
+    <string name="fail_to_load_leave_type"> 无法找到任何请假类型</string>
+
+    <!-- Leave submission fail message -->
+    <string name="fail_to_submit_leave">申请请假失敗</string>
+    <!-- Leave submission success message -->
+    <string name="success_in_leave_submission">成功申请假期</string>
+
+    <!-- is staff message -->
+    <string name="is_staff_error">此员工不能申请请假</string>
+
+    <!-- Date formate -->
+    <string name="day_in_date">日</string>
+    <string name="month">月</string>
+    <string name="year">年</string>
+    <string name="leave_rejected">被退回</string>
+    <string name="leave_approved">已批准</string>
+    <string name="leave_tobeapprove">待处理</string>
+    <string name="leave_all">全部</string>
+    <string name="error_fail_remaining_leave">读取请假时长失败</string>
+    <string name="default_time_zone">GMT+08</string>
+
+    <!-- Leader Board -->
+
+    <string name="latest">最新</string>
+    <string name="most_popular">最热门</string>
+    <string name="recommend_leader_board">推荐</string>
+    <string name="updated">更新</string>
+    <string name="title_leader_board">排行榜</string>
+    <string name="category">类别</string>
+    <string name="open">打开</string>
+    <string name="publish_at">发布于</string>
+
+    <!--  -->
+    <string name="leader_board_detail">详情</string>
+    <string name="download">下载</string>
+    <string name="rate">评分</string>
+    <string name="dialog_description">点一下星星来评分</string>
+    <string name="star_poor">较差</string>
+    <string name="star_fair">一般 </string>
+    <string name="star_average">中等</string>
+    <string name="star_good">良好</string>
+    <string name="star_excellent">优秀</string>
+    <string name="cancel">取消 </string>
+    <string name="search">搜寻</string>
+    <string name="select_category">请选择类别</string>
+    <string name="emp_id">员工工号</string>
+    <string name="emp_name">员工姓名</string>
+    <string name="apply_date">申请日期</string>
+    <string name="leave_type">假期类型</string>
+    <string name="leave_quota">假期额度</string>
+    <string name="leave_start_date">开始日期</string>
+    <string name="leave_end_date">结束日期</string>
+    <string name="leave_period">请假时长</string>
+    <string name="approve_description">确认批准这个请假申请</string>
+    <string name="reject_description">确认退回这个请假申请</string>
+    <string name="pending_leave_title">待审批的请假申请</string>
+    <string name="approve_leave_title">请假审批</string>
+    <string name="leave_approve">审批</string>
+    <string name="label_of_ot_pay_restdays">公休加班(200%)</string>
+    <string name="label_of_ot_pay_normal">平常加班(150%)</string>
+    <string name="label_of_basic_pay">正常出勤工资</string>
+    <string name="label_of_gross_pay">总薪资</string>
+    <string name="label_of_ot_pay_statutory_holidays">节日加班(300%)</string>
+    <string name="label_of_total">总工资</string>
+    <string name="label_of_fpay_type_name">工资性质</string>
+    <string name="label_of_monthly_rate">正常工作时间工资</string>
+    <string name="label_of_deduction_in_title">总扣款</string>
+    <string name="label_of_working_hour_normal">平常加班</string>
+    <string name="app_downloading">下载中</string>
+    <string name="app_updating">更新中</string>
+    <string name="app_download_complete">下载完成</string>
+    <string name="app_download_failed">下载失敗</string>
+    <string name="app_download_title">应用程序下载中</string>
+    <string name="region_dialog_title">请选择区域</string>
+    <string name="installed">应用程序已安装</string>
+    <string name="hour_left">小时前</string>
+    <string name="day_left">日前</string>
+    <string name="released_at">发布于: </string>
+    <string name="all_category">所有类别</string>
+    <string name="can_not_launch_the_app">没法开启该应用程式</string>   
+    <string name="add">增加</string>
+    <string name="add_channel">增加频道</string>
+    <string name="add_application">增加应用程序</string>    
+     <!-- Sample string -->
+    <string name="add">增加</string>
+    <string name="supcribed_channel_title">已订阅的频道</string>
+    <string name="edit">编辑</string>
+    <string name="finish">完成</string>
+    <string name="add_channel_title">增加频道</string>
+    <string name="confirm">确认</string>
+    <string name="no_article">沒有文章</string>
+    <string name="langugage">语言</string>
+    <string name="chinese">中文</string>
+    <string name="english">English</string>
+    <string name="vietnamese">Tiếng Việt</string>
+    <string name="subcribed_channel_number">已订阅的频道/应用程序</string>
+    <string name="acra_message_to_users">Please choose an email app. Then, click send to email the crash report to the developer</string>
+    <string name="failed_to_add_channel_or_app">增加频道/应用程序失败</string>
+    <string name="remove_channel">移除频道</string>
+    <string name="remove_channel_message">你将不会收到来自该频道的更新</string>
+    <string name="error_rating_app">请选取有效分数作评分</string>
+    <string name="application_download_alert">要重新下载此应用程序吗?</string>
+	<string name="has_not_save_changes">订阅的频道已变更，要储存您的变更或舍弃?</string>
+	<string name="discard">舍弃</string>
+	<string name="about">关于</string>
+</resources>

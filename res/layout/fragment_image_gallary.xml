@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/viewpager_margin_fix"
+    android:layout_marginRight="@dimen/viewpager_margin_fix"
+    android:orientation="vertical" >
+
+    <com.esquel.epass.ui.PinchImageView
+        android:id="@+id/pinch_image_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:scaleType="fitStart"
+        android:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@android:style/Theme.Black"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginRight="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout> <!-- From: file:/Users/zshop/Documents/gitlab/jmango-360-android/jmango360/src/main/res/layout/image_gallary_fragment.xml -->

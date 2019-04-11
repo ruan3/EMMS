@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="region_selection">
+        <item >中国</item>
+        <item >越南</item>
+        <item >毛里求斯共和国</item>
+    </string-array>
+    <string-array name="region_code">
+        <item >china</item>
+        <item >vietnam</item>
+        <item >mauritius</item>
+    </string-array>
+    
+</resources>

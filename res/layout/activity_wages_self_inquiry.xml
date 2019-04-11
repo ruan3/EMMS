@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/xam_content_wages" >
+
+    <RelativeLayout
+        android:id="@+id/rlayout_Wages_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/red_default"
+        android:gravity="center_vertical" >
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_wages_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlayout_Wages_title"
+        android:cacheColorHint="#00000000"
+        android:divider="#666666"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</RelativeLayout>

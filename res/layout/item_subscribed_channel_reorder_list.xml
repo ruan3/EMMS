@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMainlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="52dp"
+    android:background="@color/white"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp" >
+
+    <ImageView
+        android:id="@+id/subscibe_channel_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight=" 22dp"
+        android:layout_toRightOf="@+id/subscibe_channel_edit_icon"
+        android:gravity="center_vertical"
+        android:src="@drawable/app_icon_sample"
+        android:text="@string/more"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/subscibe_channel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/subscibe_channel_icon"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/salary"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/rearrange_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/gray_tabWidget"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/menu"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

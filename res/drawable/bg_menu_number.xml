@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <shape>
+            <solid android:color="#ffffff" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/menu_screen_radius_number"
+                android:bottomRightRadius="@dimen/menu_screen_radius_number"
+                android:topLeftRadius="@dimen/menu_screen_radius_number"
+                android:topRightRadius="@dimen/menu_screen_radius_number" />
+        </shape>
+    </item>
+    <item
+        android:bottom="2dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape>
+            <solid android:color="#a62740" />
+
+            <corners
+                android:bottomLeftRadius="@dimen/menu_screen_radius_number"
+                android:bottomRightRadius="@dimen/menu_screen_radius_number"
+                android:topLeftRadius="@dimen/menu_screen_radius_number"
+                android:topRightRadius="@dimen/menu_screen_radius_number" />
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+
+    <include
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_include_view_bottom_article"
+        android:layout_alignParentTop="true"
+        layout="@layout/view_top_article_list" />
+
+    <LinearLayout
+        android:id="@+id/article_content"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_menu"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:weightSum="11" >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@null" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+            
+
+            <TextView
+                android:id="@+id/tv_article_name"
+                style="@style/article_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:gravity="top|left"
+                android:maxLines="2"
+                
+                android:singleLine="true" />
+
+            <include
+                android:id="@+id/bottom_menu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_include_view_bottom_article"
+                android:layout_alignParentBottom="true"
+                layout="@layout/view_bottom_article_list" />
+			<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/separator"
+                android:gravity="center_vertical|right"
+                android:paddingBottom="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:textSize="14sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/like_article_list"
+                    android:drawablePadding="5dp"
+                    android:paddingRight="5dp"
+                     />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/department_name"
+                style="@style/article_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_menu"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/date"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#000" />
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@id/department_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#cdcdcd" />
+
+            <TextView
+                android:id="@+id/tv_article_summary"
+                style="@style/article_summary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/separator"
+                android:layout_below="@id/tv_article_name"
+                android:maxLines="5"
+                android:ellipsize="end"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

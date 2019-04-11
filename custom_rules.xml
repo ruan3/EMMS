@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sets android:versionCode in AndroidManifest.xml based on Jenkins BUILD_NUMBER env variable -->
+<project
+    name="custom_rules"
+    default="debug" >
+
+    <property environment="env" />
+
+    <target name="set-version-code" >
+        <propertyfile file="version.properties" >
+            <entry
+                key="app.version.code"
+                operation="="
+                type="int"
+                value="${env.BUILD_NUMBER}"
+                pattern="0" />
+        </propertyfile>
+
+        <property file="version.properties" />
+        <echo>Version code: ${app.version.code}</echo>
+
+        <property
+            name="match.end"
+            value="&quot;" />
+
+        <property
+            name="matchVersionCode.start"
+            value="android:versionCode=\&quot;" />
+
+        <replaceregexp
+            file="AndroidManifest.xml"
+            match="${matchVersionCode.start}[^&quot;]*${match.end}"
+            replace="${matchVersionCode.start}${app.version.code}${match.end}" />
+    </target>
+
+</project>

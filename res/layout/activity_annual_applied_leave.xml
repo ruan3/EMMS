@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AnnualLeaveActivity" >
+
+    <include
+        android:id="@+id/top_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_include_view_bottom_article"
+        android:layout_alignParentTop="true"
+        layout="@layout/view_top_menu_app" />
+
+    <LinearLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_menu"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_tab"
+        android:padding="1dp"
+        android:weightSum="4" >
+
+        <TextView
+            android:id="@+id/allLeaves"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.98"
+            android:background="#a62740"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectTab"
+            android:padding="5dp"
+            android:tag="all"
+            android:text="@string/leave_all"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.02"
+            android:background="@color/red_default"
+            android:tag="Divider"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/toBeApproved"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.98"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectTab"
+            android:padding="5dp"
+            android:tag="toBeApproved"
+            android:text="@string/leave_tobeapprove"
+            android:textColor="@color/red_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.02"
+            android:background="@color/red_default"
+            android:tag="Divider"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/approved"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.98"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectTab"
+            android:padding="5dp"
+            android:tag="approved"
+            android:text="@string/leave_approved"
+            android:textColor="@color/red_default"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.02"
+            android:background="@color/red_default"
+            android:tag="Divider"
+            android:textSize="14sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/rejected"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="selectTab"
+            android:padding="5dp"
+            android:tag="rejected"
+            android:text="@string/leave_rejected"
+            android:textColor="@color/red_default"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/listview_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/applied_leave_bottom_ll"
+        android:layout_below="@+id/tab"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/transparent"
+        android:divider="@color/list_divider"
+        android:dividerHeight="1dp" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/applied_leave_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/leave_bottom_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textColor="@color/text_color_blue"
+            android:layout_marginRight="20dp"
+            android:text="@string/approve_leave_title" />
+
+        <ImageView
+            android:id="@+id/leave_bottom_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"        
+            android:layout_toLeftOf="@+id/leave_bottom_text"
+            android:src="@drawable/icon_approve" />
+    </RelativeLayout>
+
+</RelativeLayout>
